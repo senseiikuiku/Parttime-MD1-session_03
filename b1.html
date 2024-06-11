@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 1</title>
+        <style>
+            .group-input {
+                font-size: 15px;
+            }
+            .group-input + .group-input {
+                margin-top: 10px;
+            }
+            .name,
+            .email,
+            .favor {
+                float: left;
+                width: 10%;
+                text-align: right;
+            }
+            .check-favor {
+                font-size: 10px;
+                color: orange;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding-left: 30px;
+            }
+            #name,
+            #email {
+                margin-left: 30px;
+            }
+
+            .group-input2 {
+                font-size: 15px;
+                color: blue;
+            }
+
+            .group-input2 + .group-input2 {
+                margin-top: 10px;
+            }
+
+            .name2,
+            .email2,
+            .gender,
+            .address,
+            .birth,
+            .class,
+            .sdt {
+                float: left;
+                width: 10%;
+                text-align: right;
+            }
+            #name2,
+            #email2,
+            #address,
+            #class,
+            #birth,
+            #sdt {
+                margin-left: 30px;
+            }
+            #gender {
+                display: flex;
+                padding-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p style="background: red; color: #fff; text-align: center">
+                SỞ THÍCH CỦA BẠN
+            </p>
+        </header>
+        <form action="xu-ly.html" method="post">
+            <div class="group-input">
+                <label class="name" for="name">Họ và tên</label>
+                <input type="text" name="" id="name" />
+            </div>
+            <div class="group-input">
+                <label class="email" for="email">Email</label>
+                <input style="width: 100px" type="email" name="" id="email" />
+            </div>
+            <div class="group-input">
+                <label class="favor" for="">Sở thích</label>
+                <div class="check-favor">
+                    <div>
+                        <input type="checkbox" name="" id="" />
+                        <label for="">Thể thao</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label for="">Âm nhạc</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label for="">Đọc sách</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label for="">Lướt web</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label for="">Chơi game</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label for="">Điện ảnh</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label for="">Du lịch</label>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; margin: 10px 0 50px 0">
+                <button style="margin-left: 20%" type="submit">
+                    Gửi thông tin
+                </button>
+                <button style="margin-left: 10px" type="reset">Nhập lại</button>
+            </div>
+        </form>
+        <br />
+        <hr />
+        <br />
+        <header>
+            <p style="background-color: aqua; color: blue; font-weight: bold">
+                ĐĂNG KÝ NGUYỆN VỌNG
+            </p>
+        </header>
+        <form action="xu-ly.html" method="post">
+            <div class="group-input2">
+                <label class="name2" for="name2">Họ và tên</label>
+                <input type="text" name="" id="name2" />
+            </div>
+            <div class="group-input2">
+                <label class="birth" for="birth">Ngày sinh</label>
+                <input style="width: 100px" type="text" name="" id="birth" />
+            </div>
+            <div class="group-input2">
+                <label class="gender" for="">Giới tính</label>
+                <div id="gender">
+                    <div>
+                        <input type="radio" name="gender" id="male" />
+                        <label for="male">Nam</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female" />
+                        <label for="female">Nữ</label>
+                    </div>
+                </div>
+            </div>
+            <div class="group-input2">
+                <label class="address" for="address">Địa chỉ</label>
+                <input type="textarea" name="" id="address" />
+            </div>
+            <div class="group-input2">
+                <label class="class" for="">Lớp</label>
+                <select name="" id="class">
+                    <option hidden value="">-Chọn lớp-</option>
+                    <option value="">Lớp 1</option>
+                    <option value="">Lớp 2</option>
+                    <option value="">Lớp 3</option>
+                </select>
+            </div>
+            <div class="group-input2">
+                <label class="email2" for="email2">Email</label>
+                <input type="email" name="" id="email2" />
+            </div>
+            <div class="group-input2">
+                <label class="sdt" for="sdt">Điện thoại</label>
+                <input type="text" name="" id="sdt" />
+            </div>
+            <div style="display: flex; margin: 10px 0 50px 0">
+                <button style="margin-left: 20%" type="submit">Đăng ký</button>
+                <button style="margin-left: 10px" type="reset">Nhập lại</button>
+            </div>
+        </form>
+        <br />
+    </body>
+</html>

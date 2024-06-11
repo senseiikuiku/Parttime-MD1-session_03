@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 3</title>
+        <style>
+            .group-input+.group-input {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <div class="group-input">
+                <label class="name" for="name">Họ và tên:</label><br>
+                <input type="text" name="" id="name" />
+            </div>
+            <div class="group-input">
+                <label class="email" for="email">Email:</label><br>
+                <input type="email" name="" id="email" />
+            </div>
+            <div class="group-input">
+                <label class="sdt" for="sdt">Số điện thoại:</label><br>
+                <input type="text" name="" id="sdt" />
+            </div>
+            <div class="group-input">
+                <label class="gender" for="gender">Giới tính:</label><br />
+                <div>
+                    <input type="radio" name="gender" id="male" />
+                    <label for="male">Nam</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female" />
+                    <label for="female">Nữ</label>
+                </div>
+            </div>
+            <button style="margin-top: 10px;" type="submit">Đăng ký</button>
+        </form>
+    </body>
+</html>

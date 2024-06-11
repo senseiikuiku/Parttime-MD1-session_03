@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Demo</title>
+    </head>
+    <style>
+        .group-input + .group-input {
+            margin-top: 10px;
+        }
+        .name,
+        .email,
+        .password,
+        .gender,
+        .sourse,
+        .file,
+        .favor,
+        .note,
+        .birth {
+            float: left;
+            width: 15%;
+            text-align: right;
+        }
+        #name,
+        #email,
+        #password,
+        #gender,
+        #sourse,
+        #file,
+        #favor,
+        #note,
+        #birth {
+            margin-left: 30px;
+        }
+    </style>
+    <body
+        style="
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+        "
+    >
+        <h3 style="background: aqua; text-align: center">
+            FROM ĐĂNG KÝ KHÓA HỌC
+        </h3>
+        <form action="">
+            <div class="group-input">
+                <label class="name" for="name">Full Name</label>
+                <input type="text" name="" id="name" />
+            </div>
+            <div class="group-input">
+                <label class="email" for="email">email</label>
+                <input type="email" name="" id="email" />
+            </div>
+            <div class="group-input">
+                <label class="password" for="password">Password</label>
+                <input type="password" name="" id="password" />
+            </div>
+            <div class="group-input">
+                <label class="birth" for="birth">BirthDay</label>
+                <input type="date" name="" id="birth" />
+            </div>
+            <div class="group-input">
+                <label class="gender" for="">Giới tính</label>
+                <div
+                    style="display: flex; padding-left: 30px"
+                    class="item-gender"
+                >
+                    <div>
+                        <input type="radio" name="gender" id="male" />
+                        <label for="male">Nam</label>
+                    </div>
+                    <div>
+                        <input
+                            style="margin-left: 10px"
+                            type="radio"
+                            name="gender"
+                            id="female"
+                        />
+                        <label for="female">Nữ</label>
+                    </div>
+                </div>
+            </div>
+            <div class="group-input">
+                <label class="sourse" for="">Khóa học</label>
+                <select id="sourse" name="">
+                    <option value="">Lựa chọn</option>
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">Javascript</option>
+                </select>
+            </div>
+            <div class="group-input">
+                <label class="file" for="">Ảnh đại diện</label>
+                <input type="file" name="" id="file" />
+            </div>
+            <div class="group-input">
+                <label class="favor" for="favor">Sở thích</label>
+                <div
+                    style="display: flex; padding-left: 30px"
+                    class="check-favor"
+                >
+                    <div>
+                        <input type="checkbox" name="banh" id="" />
+                        <label for="banh">Bánh</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="keo" id="" />
+                        <label for="keo">Kẹo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ngot" id="" />
+                        <label for="ngot">Nước ngọt</label>
+                    </div>
+                </div>
+            </div>
+            <div class="group-input">
+                <label class="note" for="note">Ghi chú</label>
+                <textarea rows="4" name="" id="note"></textarea>
+            </div>
+            <div style="display: flex; justify-content: center">
+                <button type="submit">Đăng Ký</button>
+            </div>
+        </form>
+    </body>
+</html>
